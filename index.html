@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador de QR desde Venta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generar QR</h1>
+    <input type="number" id="ventaId" placeholder="Ingrese ID de Venta" />
+    <button onclick="generarQR()">Generar</button>
+
+    <div id="resultado" style="display: none;">
+      <h2>Contenido:</h2>
+      <p id="contenido"></p>
+
+      <h2>Código QR:</h2>
+      <img id="qrImagen" alt="QR generado" />
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
